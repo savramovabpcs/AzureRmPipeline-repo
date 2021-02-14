@@ -19,8 +19,8 @@ steps:
     resourceGroupName: 'myarmtemplaterg'
     location: 'Central US'
     templateLocation: 'Linked artifact'
-    csmFile: 'CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName Arm1 -linkedTemplateUri https://raw.githubusercontent.com/savramovabpcs/AzureRmPipeline-repo/main/CreateWebApp/linkedStorageAccount.json'
+    csmFile: 'ARM-Test/azuredeploy-05.json'
+    overrideParameters: '-projectName Arm1 -linkedTemplateUri https://raw.githubusercontent.com/savramovabpcs/AzureRmPipeline-repo/main/ARM-Test/azuredeploy.parameters.dev.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
     addSpnToEnvironment: true
